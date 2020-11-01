@@ -43,6 +43,7 @@ body{
     align-items: center;
     position: relative;
     cursor: pointer;
+    outline: none;
 }
 
 .cell:first-child,.cell:nth-child(2),.cell:nth-child(3){
