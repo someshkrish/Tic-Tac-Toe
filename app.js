@@ -2,9 +2,10 @@ const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 const winningMessageElement = document.getElementById('winningMessage')
+const restartButton = document.getElementById('restartButton')
+const chk = document.getElementById('chk');
 const X_CLASS = 'x'
 const O_CLASS = 'o'
-const restartButton = document.getElementById('restartButton')
 let oturn;
 
 const WINNING_COMBINATIONS = [
@@ -90,3 +91,7 @@ function checkWin(currentClass) {
         })
     })
 }
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
