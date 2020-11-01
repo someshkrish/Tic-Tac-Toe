@@ -22,10 +22,6 @@ body.dark{
     background-color: rgb(48, 46, 46);
 }
 
-body.dark .board{
-    border: solid 5px black;
-}
-
 body.dark .heading{
     color: white;
 }
